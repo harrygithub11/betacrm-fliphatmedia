@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: 'newyearlp-web',
+            name: 'betacrm-web',
             script: 'npm',
             args: 'start',
             env: {
@@ -10,7 +10,7 @@ module.exports = {
             }
         },
         {
-            name: 'newyearlp-worker',
+            name: 'betacrm-worker',
             script: 'npx',
             args: 'tsx workers/email-worker.ts',
             instances: 1,
@@ -19,7 +19,7 @@ module.exports = {
             max_memory_restart: '1G'
         },
         {
-            name: 'newyearlp-imap',
+            name: 'betacrm-imap',
             script: 'npx',
             args: 'tsx workers/imap-sync.ts',
             instances: 1,
